@@ -13,10 +13,11 @@ import Main from "./components/Main";
 import SubMain from "./components/SubMain";
 import FinancialStatements from "./components/FinancialStatements";
 import ChartOfAccounts from "./components/ChartOfAccounts";
-// import Users from "./components/Users";
-// import Customers from "./components/Customers";
-// import Vendors from "./components/Vendors";
-// import Items from "./components/Items";
+import TrialBalance from "./components/TrialBalance";
+import Users from "./components/Users";
+import Customers from "./components/Customers";
+import Vendors from "./components/Vendors";
+import Items from "./components/Items";
 // import Invoices from "./components/Invoices";
 // import Bills from "./components/Bills";
 // import Payments from "./components/Payments";
@@ -80,14 +81,14 @@ function App() {
               <Route path="/submain" element={<SubMain />} />
               <Route path="/financials" element={<FinancialStatements />} />
               <Route path="/chart-of-accounts" element={<ChartOfAccounts />} />
-              {/* <Route path="/users" element={<Users />} />
+              <Route path="/trialbalance" element={<TrialBalance />} />
+              <Route path="/users" element={<Users />} />
               <Route path="/customers" element={<Customers />} />
-
               <Route path="/vendors" element={<Vendors />} />
               <Route path="/items" element={<Items />} />
-              <Route path="/invoices" element={<Invoices />} />
+              {/* <Route path="/invoices" element={<Invoices />} />
               <Route path="/bills" element={<Bills />} />
-              <Route path="/payments" element={<Payments />} /> */}
+              <Route path="/payments" element={<Payments />} />   */}
               {/* <Route path="*" element={<Navigate to="/" />} /> */}
             </Routes>
           </main>
