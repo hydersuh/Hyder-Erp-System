@@ -18,7 +18,11 @@ import Users from "./components/Users";
 import Customers from "./components/Customers";
 import Vendors from "./components/Vendors";
 import Items from "./components/Items";
-// import Invoices from "./components/Invoices";
+import Invoices from "./components/Invoices";
+import Groups from "./components/Groups";
+import SubGroups from "./components/SubGroups";
+import Ledgers from "./components/Ledgers";
+import JournalEntries from "./components/JournalEntries";
 // import Bills from "./components/Bills";
 // import Payments from "./components/Payments";
 import api from "./services/api";
@@ -86,9 +90,13 @@ function App() {
               <Route path="/customers" element={<Customers />} />
               <Route path="/vendors" element={<Vendors />} />
               <Route path="/items" element={<Items />} />
-              {/* <Route path="/invoices" element={<Invoices />} />
-              <Route path="/bills" element={<Bills />} />
-              <Route path="/payments" element={<Payments />} />   */}
+              <Route path="/invoices" element={<Invoices />} />
+              <Route path="/groups" element={<Groups />} />
+              <Route path="/subgroups" element={<SubGroups />} />
+              <Route path="/ledgers" element={<Ledgers />} />
+              <Route path="/journalEntries" element={<JournalEntries />} />
+              {/* <Route path="/bills" element={<Bills />} />
+              <Route path="/payments" element={<Payments />} />    */}
               {/* <Route path="*" element={<Navigate to="/" />} /> */}
             </Routes>
           </main>
